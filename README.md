@@ -40,6 +40,7 @@
 32. [Shutil module](#shutil-module)
 	- [Top 10 shutil methods](#Top-10-shutil-methods)
 33. [Web scrapping](#web-scrapping)
+34. [BeautifulSoup](#BeautifulSoup)
 ---
 # Syllabus overview
 
@@ -2328,3 +2329,63 @@ with open("Data.html","w") as f:
 soup.select("tag/title")
 ```
 You can mention `H1`, `title`, in `select` bracket. If you mention `H1` in bracket, it scrap **Heading 1** data.
+
+---
+# `BeautifulSoup`
+
+`BeautifulSoup` is a **Python library for parsing and navigating HTML/XML documents**.  
+It’s most often used in **web scraping**, where you need to extract specific information (like titles, links, tables, etc.) from web pages.
+
+#### Syntax:
+```python
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html_doc, "html.parser")
+```
+---
+
+### Why use BeautifulSoup?
+
+When you do:
+```python
+import requests
+result = requests.get("https://sangolacollege.org/")
+print(result.text)
+```
+You only get the raw **HTML source** as a long string. That’s messy to work with.
+ `BeautifulSoup` helps by turning that raw HTML into a structured, Pythonic object tree, so you can search and extract data easily.
+
+#### Example:
+```python
+import requests
+from bs4 import BeautifulSoup
+
+# Fetch page
+url = "https://sangolacollege.org/"
+response = requests.get(url)
+
+# Parse HTML with BeautifulSoup
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract the title of the page
+print(soup.title.text)
+
+# Extract all links
+for link in soup.find_all("a"):
+    print(link.get("href"))
+```
+### Key uses of BeautifulSoup:
+
+- **Parse HTML/XML** into a structured format.
+    
+- **Search and filter elements** (like `<div>`, `<a>`, `<table>`, etc.).
+    
+- **Extract text, attributes, or entire sections**.
+    
+- **Clean messy HTML** into usable data.
+
+🔑 In short:  
+`requests` → gets the HTML.  
+`BeautifulSoup` → makes it easy to navigate and extract data from that HTML.
+
+---
