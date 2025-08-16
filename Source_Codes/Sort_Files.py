@@ -2,8 +2,8 @@ import os
 import shutil
 
 try:
-    src = r"D:\Rakesh_Environment\Photos"
-    dst = r"D:\Rakesh_Environment\Temp"
+    src = r""
+    dst = r""
     counter = 1
     image_ext = [
         ".jpg",
