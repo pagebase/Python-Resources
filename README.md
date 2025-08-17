@@ -40,7 +40,7 @@
 32. [Shutil module](#shutil-module)
 	- [Top 10 shutil methods](#Top-10-shutil-methods)
 33. [Web scrapping](#web-scrapping)
-34. [BeautifulSoup](#BeautifulSoup)
+    - [BeautifulSoup](#BeautifulSoup)
 ---
 # Syllabus overview
 
