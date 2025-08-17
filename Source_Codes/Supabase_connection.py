@@ -17,3 +17,4 @@ if response.data:
     print("Data inserted successfully:", response.data)
 else:
     print("Error:", response.error)
+# Read doc for information
