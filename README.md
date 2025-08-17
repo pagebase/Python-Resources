@@ -2242,8 +2242,6 @@ import requests
 
 import bs4
 
-  
-
 with open("Data.html","w") as f:
 
     result=requests.get("https://sangolacollege.org/")
