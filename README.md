@@ -1,113 +1,45 @@
 # Table of content
-1. [Syllabus overview](#syllabus-overview)
-2. [Installation process](#installation-process)
-3. [Why Python language?](#why-python-language)
-4. [Command line basics](#Windows-command-line-basics)
-5. [Data types](#data-types)
-6. [Operators](#operators)
-7. [Variable assignments](#Variable-assignments)
+1. [Installation process](#installation-process)
+2. [Why Python language?](#why-python-language)
+3. [Command line basics](#Windows-command-line-basics)
+4. [Data types](#data-types)
+5. [Operators](#operators)
+6. [Variable assignments](#Variable-assignments)
 	- [Rules for variable assignment](#valid-rules-for-naming-variables-in-python)
-8. [Strings](#strings)
+7. [Strings](#strings)
 	- [Top 10 string methods](#top-10-string-methods)
 	- [Print formatting with string](#print-formatting-with-string)
 	- [Float formatting with f-string](#float-formatting-with-f-string)
-9. [List](#list)
+8. [List](#list)
 	- [Top 10 list methods](#top-10-list-methods)
-10. [Dictionary](#dictionary)
+9. [Dictionary](#dictionary)
 	- [Top 6 dictionary methods](#top-10-dictionary-methods)
-11. [Tuples](#tuples)
-12. [Set](#set)
-13. [Files](#files)
-14. [Guess the number game](#guess-the-number-game)
-15. [Map function](#map-function)
-16. [Lambda function](#lambda-function)
-17. [Global keyword](#global-keyword)
-18. [args](#args)
-19. [kwargs](#kwargs)
-20. [OOP](#oop)
-21. [Modify Object properties](#modify-object-properties)
-22. [Delete object properties](#delete-object-properties)
-23. [Delete objects](#delete-objects)
-24. [Core concepts of OOP](#Core-Concepts-of-OOP-in-Python)
-25. [Packages and Library](#packages-and-library)
-26. [What is `__name__=="__main__"`?](#What-is-name-and-main)
-27. [Handling Exceptions in Python](#Handling-exceptions-in-python)
-28. [Python Decorators for Beginners](#python-decorators-for-beginners)
-29. [Generator function](#generator-function)
-30. [Collection module](#collection-module)
-31. [OS module](#os-module)
+10. [Tuples](#tuples)
+11. [Set](#set)
+12. [Files](#files)
+13. [Guess the number game](#guess-the-number-game)
+14. [Map function](#map-function)
+15. [Lambda function](#lambda-function)
+16. [Global keyword](#global-keyword)
+17. [args](#args)
+18. [kwargs](#kwargs)
+19. [OOP](#oop)
+20. [Modify Object properties](#modify-object-properties)
+21. [Delete object properties](#delete-object-properties)
+22. [Delete objects](#delete-objects)
+23. [Core concepts of OOP](#Core-Concepts-of-OOP-in-Python)
+24. [Packages and Library](#packages-and-library)
+25. [What is `__name__=="__main__"`?](#What-is-name-and-main)
+26. [Handling Exceptions in Python](#Handling-exceptions-in-python)
+27. [Python Decorators for Beginners](#python-decorators-for-beginners)
+28. [Generator function](#generator-function)
+39. [Collection module](#collection-module)
+30. [OS module](#os-module)
 	- [OS module methods](#os-module-methods)
-32. [Shutil module](#shutil-module)
+31. [Shutil module](#shutil-module)
 	- [Top 10 shutil methods](#Top-10-shutil-methods)
-33. [Web scrapping](#web-scrapping)
+32. [Web scrapping](#web-scrapping)
     - [BeautifulSoup](#BeautifulSoup)
----
-# Syllabus overview
-
-1. Python 2 vs Python 3
-2. Python installation
-3. Environment selection
-4. Jupyter notebook
-5. Git & Github
-6. Object & data structure basics
-    - Numbers
-    - Strings
-    - List
-    - Dictionary
-    - Tuples
-    - Files
-    - Sets
-    - Booleans
-7. Comparison operator
-    - Basic operators
-    - Chained comparison operators
-8. Python statement
-    - `if`, `elif`, `else`
-    - `for` loops
-    - `while` loops
-    - `range()`
-    - List comprehension
-9. Methods & functions
-    - Methods
-    - Functions
-    - Lambda expressions
-    - Nested statement
-    - Scope
-10. Create a game in python
-11. OOP
-    - Objects
-    - Classes
-    - Methods
-    - Inheritance
-    - Special methods
-12. Error and exceptional handling
-    - Error
-    - Exception
-    - try
-    - except
-    - finally
-13. Create a more complex game in python
-14. Modules & packages
-    - Create modules
-    - Installing modules
-    - Exploring python ecosystem
-15. Build in functions
-    - `map`
-    - `reduce`
-    - `filter`
-    - `zip`
-    - `enumerate`
-    - `all, any`
-    - Complex
-16. Decorators in python
-17. Python generators
-    - Iteration vs generation
-    - Creating generators
-18. Final capstone project
-19. Advance bonus contents
-    - Advance python modules
-    - Advance python objects and data structure
-
 ---
 # Installation process
 
