@@ -2319,3 +2319,4 @@ for link in soup.find_all("a"):
 `BeautifulSoup` → makes it easy to navigate and extract data from that HTML.
 
 ---
+# Image processing
