@@ -156,6 +156,7 @@ venv\Scripts\activate
 .\venv\Scripts\Activate.ps1
 ```
 > After activation, your terminal prompt should show something like: `(venv)`
+> To stop type `deactivate`
 
 ## **Step 4:** Select the Interpreter in VS Code
 
