@@ -2016,7 +2016,7 @@ print(next(gen))  # 1
 ---
 # Collection module
 
-Suppose you have list of `1's` and `2's` and `3's. Now you want to count how many ocurrences of each number, that's why `collection` comes in. In short it gives ferquency of the words or characters or numbers. This would useful when teacher say `How many word frequency in this paragraph.`
+Suppose you have list of `1's` and `2's` and `3's`. Now you want to count how many ocurrences of each number, that's why `collection` comes in. In short it gives ferquency of the words or characters or numbers. This would useful when teacher say `How many word frequency in this paragraph.`
 
 #### Example 1:
 ```python
