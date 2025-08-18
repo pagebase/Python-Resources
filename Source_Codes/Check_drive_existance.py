@@ -7,4 +7,5 @@ for letter in range(65, 91):  # ASCII range for A-Z
     if os.path.exists(drive):
         drives.append(drive)
 
-print(f"Found {len(drives)} drive(s): {', '.join(drives)}") # Best method to join paths
+for i in drives:
+    print(i)
