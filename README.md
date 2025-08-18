@@ -64,6 +64,9 @@
 
 - **Flask Web Development** by Miguel Grinberg
 
+#### Ethical hacking
+
+- **Black Hat Python: Python Programming for Hackers and Pentesters** by Justin Seitz
 ---
 # Installation process
 
