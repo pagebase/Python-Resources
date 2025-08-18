@@ -1,4 +1,5 @@
 # Table of content
+0. [Best books for python](#best-books-for-python)
 1. [Installation process](#installation-process)
 2. [Why Python language?](#why-python-language)
 3. [Command line basics](#Windows-command-line-basics)
@@ -40,6 +41,29 @@
 	- [Top 10 shutil methods](#Top-10-shutil-methods)
 32. [Web scrapping](#web-scrapping)
     - [BeautifulSoup](#BeautifulSoup)
+---
+# Best books for python
+
+#### Beginners
+
+- **Python Crash Course** by Eric Matthes
+- **Automate the Boring Stuff with Python** by Al Sweigart
+#### Intermediate
+
+- **Fluent Python** by Luciano Ramalho
+- **High Performance Python** by Micha Gorelick & Ian Ozsvald
+
+#### Data science and Machine Learning
+
+- **Python for Data Analysis** by Wes McKinney
+- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** by Aurélien Géron
+
+#### Web development
+
+- **Django for Beginners** by William S. Vincent
+
+- **Flask Web Development** by Miguel Grinberg
+
 ---
 # Installation process
 
