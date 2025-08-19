@@ -41,6 +41,7 @@
 	- [Top 10 shutil methods](#Top-10-shutil-methods)
 32. [Web scrapping](#web-scrapping)
     - [BeautifulSoup](#BeautifulSoup)
+    - [BeautifulSoup properties](#BeautifulSoup-properties)
 ---
 # Best books for python
 
@@ -2344,5 +2345,20 @@ for link in soup.find_all("a"):
 🔑 In short:  
 `requests` → gets the HTML.  
 `BeautifulSoup` → makes it easy to navigate and extract data from that HTML.
+
+# `BeautifulSoup` properties
+
+| Operation                | Example                        | Description                                      |
+|--------------------------|--------------------------------|--------------------------------------------------|
+| Get full HTML            | `soup.prettify()`              | Returns formatted HTML as a string               |
+| Find first tag           | `soup.find("a")`               | Finds the first `<a>` tag                        |
+| Find all tags            | `soup.find_all("a")`           | Returns a list of all `<a>` tags                 |
+| CSS selector search      | `soup.select(".btn-link")`     | Selects elements with the class `btn-link`       |
+| Get page title           | `soup.title.string`            | Returns the title of the page                    |
+| Get all page text        | `soup.get_text()`              | Extracts all text from the HTML document         |
+| Access `<body>` tag      | `soup.body`                    | Accesses the `<body>` tag directly               |
+| Access `<head>` tag      | `soup.head`                    | Accesses the `<head>` tag directly               |
+| Get tag text             | `soup.find("a").text`          | Gets the text inside the first `<a>` tag         |
+| Get tag attribute        | `soup.find("a")["href"]`       | Gets the `href` value of the first `<a>` tag     |
 
 ---
