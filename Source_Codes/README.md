@@ -12,7 +12,7 @@ You have bunch of `JPG` files, `PDF` files, `MP4` files in your particular folde
 - Photos
 - Documents
 
-You can do it by following `python` script. Just mention `source` and `destination` folder and **run** the program. In just seconds it sort your files and reduce your tedeous task. Don't say thanks to me, just tell me bettet ways to make it more robust and also contribute your creativity in it.
+You can do it by following `python` script. Just mention `source` and `destination` folder and **run** the program. In just seconds it sort your files and reduce your tedeous task. Don't say thanks to me, just tell me better ways to make it more robust and also contribute your creativity in it.
 
 > Script 1
 
