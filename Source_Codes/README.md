@@ -1,6 +1,7 @@
 # Table of contents
 
 1. [Sort files](#sort-files)
+2. [List out existing drives](#list-out-existing-drives)
 
 ---
 # Sort files
@@ -110,3 +111,26 @@ try:
 except Exception as e:
     print("Error:", e)
 ```
+
+---
+# List out existing drives
+
+Did you ever checked how many of your drives present on your system? You onow the only way by heading to **This PC** and checking there how many drives are. You can check drives by `python` language too. Are you shocked? Don't worry, it's just tip of the iceberg.
+
+> Script 2
+
+```python
+import os
+
+# Check if drives are available
+drives = []
+for letter in range(65, 91):  # ASCII range for A-Z
+    drive = f"{chr(letter)}:/"
+    if os.path.exists(drive):
+        drives.append(drive)
+
+for i in drives:
+    print(i)
+```
+
+---
