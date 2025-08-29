@@ -18,6 +18,8 @@
 10. [Tuples](#tuples)
 11. [Set](#set)
 12. [Files](#files)
+
+    - [Regular expression](#regular-expression)
 13. [Guess the number game](#guess-the-number-game)
 14. [Map function](#map-function)
 15. [Lambda function](#lambda-function)
@@ -1154,6 +1156,135 @@ with open('tables_1_to_100.txt', 'w') as f:
 
         f.write("\n")  # Blank line between tables
 ```
+
+---
+# Regular expression
+
+Regular expressions (regex) are a powerful tool for pattern matching and text manipulation in Python. Python's `re` module provides full support for Perl-like regular expressions.
+
+## Basic Usage
+
+```python
+import re
+
+# Check if a pattern matches a string
+pattern = r"hello"
+text = "hello world"
+match = re.search(pattern, text)
+if match:
+    print("Pattern found!")
+```
+
+## Common Functions
+
+### `re.search()`
+Searches for the first occurrence of a pattern in a string.
+
+```python
+result = re.search(r'\d+', 'abc 123 def')
+if result:
+    print("Found:", result.group())  # Found: 123
+```
+
+### `re.match()`
+Checks for a match only at the beginning of the string.
+
+```python
+result = re.match(r'\d+', '123 abc')
+if result:
+    print("Found:", result.group())  # Found: 123
+```
+
+### `re.findall()`
+Returns all non-overlapping matches as a list.
+
+```python
+numbers = re.findall(r'\d+', '12 apples, 34 bananas, 56 cherries')
+print(numbers)  # ['12', '34', '56']
+```
+
+### `re.finditer()`
+Returns an iterator yielding match objects for all matches.
+
+```python
+for match in re.finditer(r'\d+', '12 apples, 34 bananas'):
+    print(match.group())
+```
+
+### `re.sub()`
+Replaces occurrences of a pattern with a replacement string.
+
+```python
+text = re.sub(r'\d+', 'X', '12 apples, 34 bananas')
+print(text)  # X apples, X bananas
+```
+
+## Regex Patterns
+
+### Character Classes
+- `\d` - digit (0-9)
+- `\D` - not a digit
+- `\s` - whitespace
+- `\S` - not whitespace
+- `\w` - word character (a-z, A-Z, 0-9, _)
+- `\W` - not a word character
+- `[abc]` - a, b, or c
+- `[^abc]` - not a, b, or c
+- `[a-z]` - lowercase letter from a to z
+
+### Quantifiers
+- `*` - 0 or more
+- `+` - 1 or more
+- `?` - 0 or 1
+- `{3}` - exactly 3
+- `{3,5}` - between 3 and 5
+
+### Anchors
+- `^` - start of string
+- `$` - end of string
+- `\b` - word boundary
+
+### Groups
+- `( )` - capturing group
+- `(?: )` - non-capturing group
+
+## Examples
+
+### Email Validation
+```python
+pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+email = "user@example.com"
+if re.match(pattern, email):
+    print("Valid email")
+```
+
+### Extracting Data
+```python
+text = "Name: John, Age: 30, City: New York"
+name = re.search(r'Name: (\w+)', text).group(1)
+age = re.search(r'Age: (\d+)', text).group(1)
+print(f"{name} is {age} years old")  # John is 30 years old
+```
+
+### Splitting with Regex
+```python
+text = "apple,banana;cherry orange"
+items = re.split(r'[,; ]+', text)
+print(items)  # ['apple', 'banana', 'cherry', 'orange']
+```
+
+## Flags
+- `re.IGNORECASE` or `re.I` - case insensitive matching
+- `re.MULTILINE` or `re.M` - make ^ and $ match start/end of each line
+- `re.DOTALL` or `re.S` - make . match newlines
+
+```python
+text = "Hello\nWorld"
+matches = re.findall(r'^[a-z]+', text, re.I | re.M)
+print(matches)  # ['Hello', 'World']
+```
+
+Remember to use raw strings (`r"pattern"`) for regex patterns to avoid issues with escape characters.
 
 ---
 # Comparison operator
