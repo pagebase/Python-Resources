@@ -22,94 +22,40 @@ import os
 import shutil
 
 try:
-    src = r""
-    dst = r""
-    counter = 1
-    image_ext = [
-        ".jpg",
-        ".jpeg",
-        ".jpe",
-        ".jfif",
-        ".jif",
-        ".png",
-        ".gif",
-        ".bmp",
-        ".dib",
-        ".tif",
-        ".tiff",
-        ".heif",
-        ".heic",
-        ".webp",
-        ".avif",
-        ".apng",
-        ".jp2",
-        ".j2k",
-        ".jpf",
-        ".jpx",
-        ".jpm",
-        ".ico",
-        ".cur",
-        ".dds",
-        ".icns",
-        ".pcx",
-        ".tga",
-        ".icb",
-        ".vda",
-        ".vst",
-        ".ras",
-        ".sgi",
-        ".sid",
-        ".raw",
-        ".cr2",
-        ".cr3", 
-        ".nef", 
-        ".arw",
-        ".sr2",
-        ".srf",
-        ".orf",
-        ".rw2",
-        ".dng",
-        ".raf",
-        ".pef",  
-        ".x3f", 
-        ".erf", 
-        ".kdc", 
-        ".mrw",
-        ".svg",
-        ".eps",
-        ".pdf",
-        ".ai",
-        ".cdr",
-        ".fits",
-        ".fit",
-        ".fts",
-        ".dicom",
-        ".dcm",
-        ".hdr",
-        ".exr",
-        ".jxr",
-        ".hdp",
-        ".wdp",
-        ".emf",
-        ".wmf",
-    ]
+    # Create directories function
+    def create_directory(directory_names, dst):
+        for i in directory_names:
+            path = os.path.join(dst,i) # If source path is `C:\Sorted_Data` then `path` variable contains `C:\Sorted_Data\Photos`, `C:\Sorted_Data\Videos` etc
+            os.makedirs(path, exist_ok=True) # 2nd parameter would not raise FileExistEror. If folder already exist then it will not create it and won't raise any error.
 
-    for root, folders, files in os.walk(src):
-        for file in files:
-            file_name, ext = os.path.splitext(file)
-            if ext.lower() in [e.lower() for e in img_ext]:
-                src_path = os.path.join(root, file)
-                dst_path = os.path.join(dst, file)
+    def move_files(src, dst, file_ext_list, directory_name):
+        for root, folders, files in os.walk(src):
+            for file in files:
+                if file.lower().endswith(tuple(file_ext_list)): # `endswith()` method takes `str` or `tuple of str` as argument.
+                    full_src_path=os.path.join(root,file)
+                    full_dst_path=os.path.join(dst,directory_name,file)
+                    shutil.move(full_src_path, full_dst_path)
 
-                if os.path.exists(dst_path):
-                    new_file_name = f"{file_name}_{counter}{ext}"
-                    dst_path = os.path.join(dst, new_file_name)
-                    counter += 1
+    src=input("Enter source path: ").strip() # `strip()` method remove white spaces from left, right sides.
+    dst=input("Enter destination path: ").strip()
+    folder_names = ["Photos", "Videos", "Audio", "Documents"]
+    img_ext_list = [".png", ".jpeg", ".jpg", ".webp"]
+    vid_ext_list = [".mp4", ".mkv", ".mov", ".wmv"]
+    aud_ext_list = [".mp3", ".wav", ".aac"]
+    doc_ext_list = [".pdf", ".csv", ".docx", "pptx"]
 
-                shutil.move(src_path, dst_path)
+    # Create directory function call
+    create_directory(folder_names, dst) # Create dircetories at destination as "Photos", "Videos", "Audio", "Documents"
+
+    # Move images function call
+    move_files(src, dst, img_ext_list, "Photos")
+    move_files(src, dst, vid_ext_list, "Videos")
+    move_files(src, dst, aud_ext_list, "Audio")
+    move_files(src, dst, doc_ext_list, "Documents")
 
 except Exception as e:
-    print("Error:", e)
+    print(e)
+
 ```
 
 ---
