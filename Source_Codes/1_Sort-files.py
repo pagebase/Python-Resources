@@ -1,23 +1,3 @@
-# Table of contents
-
-1. [Sort files](#sort-files)
-2. [List out existing drives](#list-out-existing-drives)
-
----
-# Sort files
-
-You have bunch of `JPG` files, `PDF` files, `MP4` files in your particular folder. You always select them manually, put them into their specified directories like:
-
-- Audio
-- Videos
-- Photos
-- Documents
-
-You can do it by following `python` script. Just mention `source` and `destination` folder and **run** the program. In just seconds it sort your files and reduce your tedeous task. Don't say thanks to me, just tell me better ways to make it more robust and also contribute your creativity in it.
-
-> [Script 1](./1_Sort-Files.py)
-
-```python
 import os
 import shutil
 
@@ -38,11 +18,12 @@ try:
 
     src=input("Enter source path: ").strip() # `strip()` method remove white spaces from left, right sides.
     dst=input("Enter destination path: ").strip()
-    folder_names = ["Photos", "Videos", "Audio", "Documents"]
+    folder_names = ["Photos", "Videos", "Audio", "Documents", "Softwares"]
     img_ext_list = [".png", ".jpeg", ".jpg", ".webp"]
     vid_ext_list = [".mp4", ".mkv", ".mov", ".wmv"]
     aud_ext_list = [".mp3", ".wav", ".aac"]
     doc_ext_list = [".pdf", ".csv", ".docx", "pptx"]
+    soft_ext_list=[".exe"]
 
     # Create directory function call
     create_directory(folder_names, dst) # Create dircetories at destination as "Photos", "Videos", "Audio", "Documents"
@@ -52,31 +33,7 @@ try:
     move_files(src, dst, vid_ext_list, "Videos")
     move_files(src, dst, aud_ext_list, "Audio")
     move_files(src, dst, doc_ext_list, "Documents")
+    move_files(src, dst, soft_ext_list, "Softwares")
 
 except Exception as e:
     print(e)
-
-```
-
----
-# List out existing drives
-
-Did you ever checked how many of your drives present on your system? You onow the only way by heading to **This PC** and checking there how many drives are. You can check drives by `python` language too. Are you shocked? Don't worry, it's just tip of the iceberg.
-
-> Script 2
-
-```python
-import os
-
-# Check if drives are available
-drives = []
-for letter in range(65, 91):  # ASCII range for A-Z
-    drive = f"{chr(letter)}:/"
-    if os.path.exists(drive):
-        drives.append(drive)
-
-for i in drives:
-    print(i)
-```
-
----
