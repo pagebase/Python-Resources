@@ -38,11 +38,12 @@ try:
 
     src=input("Enter source path: ").strip() # `strip()` method remove white spaces from left, right sides.
     dst=input("Enter destination path: ").strip()
-    folder_names = ["Photos", "Videos", "Audio", "Documents"]
+    folder_names = ["Photos", "Videos", "Audio", "Documents", "Softwares"]
     img_ext_list = [".png", ".jpeg", ".jpg", ".webp"]
     vid_ext_list = [".mp4", ".mkv", ".mov", ".wmv"]
     aud_ext_list = [".mp3", ".wav", ".aac"]
     doc_ext_list = [".pdf", ".csv", ".docx", "pptx"]
+    soft_ext_list=[".exe"]
 
     # Create directory function call
     create_directory(folder_names, dst) # Create dircetories at destination as "Photos", "Videos", "Audio", "Documents"
@@ -52,6 +53,7 @@ try:
     move_files(src, dst, vid_ext_list, "Videos")
     move_files(src, dst, aud_ext_list, "Audio")
     move_files(src, dst, doc_ext_list, "Documents")
+    move_files(src, dst, soft_ext_list, "Softwares")
 
 except Exception as e:
     print(e)
