@@ -112,7 +112,7 @@ for i in drives:
 
 This script is useful if you wanna grab web content directly to your `text` file or any other file. I have set example for scraping **Index** of `Automate the boring stuff with python`.
 
-> [Script 3]()
+> [Script 3](https://github.com/pagebase/Python-Resources/blob/resources/Source_Codes/2_Scrap_Web.py)
 
 ```python
 import requests
