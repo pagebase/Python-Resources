@@ -2,7 +2,7 @@
 
 1. [Sort files](#sort-files)
 2. [List out existing drives](#list-out-existing-drives)
-3. [Scrap web]()
+3. [Scrap web](#Scrap-web)
 
 ---
 # Sort files
