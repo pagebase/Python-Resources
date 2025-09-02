@@ -2,6 +2,7 @@
 
 1. [Sort files](#sort-files)
 2. [List out existing drives](#list-out-existing-drives)
+3. [Scrap web]()
 
 ---
 # Sort files
@@ -104,6 +105,27 @@ for letter in range(65, 91):  # ASCII range for A-Z
 
 for i in drives:
     print(i)
+```
+
+---
+# Scrap web
+
+This script is useful if you wanna grab web content directly to your `text` file or any other file. I have set example for scraping **Index** of `Automate the boring stuff with python`.
+
+> [Script 3]()
+
+```python
+import requests
+import bs4
+
+url="https://automatetheboringstuff.com/"
+f=open("Content.txt","w", encoding="UTF-8")
+result=requests.get(url)
+soup=bs4.BeautifulSoup(result.text,"html.parser")
+book_list=soup.find_all(name="li")
+for i in book_list:
+    # print(i.getText())
+    f.write(f"{i.getText()}\n")
 ```
 
 ---
