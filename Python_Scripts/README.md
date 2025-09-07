@@ -25,3 +25,8 @@ This script is useful if you wanna grab web content directly to your `text` file
 - [Source code](./2_Scrap_Web.py)
 
 ---
+# Password generator
+
+- [Source code](./3_Password_Generator.py)
+
+---
