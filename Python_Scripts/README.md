@@ -2,6 +2,7 @@
 
 1. [Sort files](#sort-files)
 2. [Web scrap](#web-scrap)
+3. [Password Generator](#password-generator)
 
 ---
 # Sort files
