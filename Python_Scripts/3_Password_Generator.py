@@ -32,3 +32,4 @@ for i in range(1,symbol_choice+1):
 # Copy password into clipboard
 pyperclip.copy(password)
 print("Successfully copid password into your clipboard")
+print("see you again!")
