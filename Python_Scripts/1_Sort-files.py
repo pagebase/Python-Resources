@@ -54,7 +54,7 @@ try:
     img_ext_list = [".png", ".jpeg", ".jpg", ".webp", ".gif"]
     vid_ext_list = [".mp4", ".mkv", ".mov", ".wmv"]
     aud_ext_list = [".mp3", ".wav", ".aac"]
-    doc_ext_list = [".pdf", ".csv", ".docx", ".pptx", ".txt", ".md", ".torrent"]
+    doc_ext_list = [".pdf", ".csv", ".docx", ".pptx", ".txt", ".md", ".torrent", ".xlsx"]
     soft_ext_list=[".exe"]
     arc_ext_list=[".zip"]
     counter=1
