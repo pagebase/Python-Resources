@@ -44,6 +44,7 @@
 32. [Web scrapping](#web-scrapping)
     - [BeautifulSoup](#BeautifulSoup)
     - [BeautifulSoup properties](#BeautifulSoup-properties)
+33. [How to run python script without having python installed](#How-to-run-python-script-without-having-python-installed)
 ---
 # Best books for python
 
@@ -2493,3 +2494,14 @@ for link in soup.find_all("a"):
 | Get tag attribute        | `soup.find("a")["href"]`       | Gets the `href` value of the first `<a>` tag     |
 
 ---
+# How to run python script without having python installed
+
+To do this you have to convert python script into **Executable** file. How you can make that? Well follow steps:
+
+**Step 1:** Install `pyinstaller`.
+
+```python
+pip install pyinstaller
+```
+
+**Step 2:** Run `pyinstaller --onefile YourScriptName.py`. This would create `.exe` file in `dist/` folder. Share `.exe` file your friend or anyone else who doesn't have python installed.
