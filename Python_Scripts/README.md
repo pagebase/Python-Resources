@@ -19,7 +19,10 @@ You can do it by following `python` script. Just mention `source` and `destinati
 :warning: This script can be dangerous for nested data in your path, for example your folder contains photos inside and outside the folder, this script would recursively move every photos no matter where it is, so be careful before using.
 
 - [Source code](./1_Sort-files.py)
-- [![Download](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/pagebase/Python-Resources/raw/refs/heads/patch-1/Python_Scripts/Applications/1_Sort-files.exe)
+
+> [!IMPORTANT]
+> Download following application if your system doesn't have python installed.
+- [![Download](https://img.shields.io/badge/Download-Application-brightgreen?style=for-the-badge)](https://github.com/pagebase/Python-Resources/raw/refs/heads/patch-1/Python_Scripts/Applications/1_Sort-files.exe)
 
 
 ---
