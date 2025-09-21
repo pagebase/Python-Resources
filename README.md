@@ -2504,4 +2504,4 @@ To do this you have to convert python script into **Executable** file. How you c
 pip install pyinstaller
 ```
 
-**Step :two:** Run `pyinstaller --onefile YourScriptName.py`. This would create `.exe` file in `dist/` folder. Share `.exe` file your friend or anyone else who doesn't have python installed.
+**Step :two:** Run `pyinstaller --onefile YourScriptName.py`. This would create `.exe` file in `dist/` folder. Share `.exe` file to your friend or anyone else who doesn't have python installed.
