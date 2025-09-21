@@ -2498,10 +2498,10 @@ for link in soup.find_all("a"):
 
 To do this you have to convert python script into **Executable** file. How you can make that? Well follow steps:
 
-**Step 1:** Install `pyinstaller`.
+**Step :one:** Install `pyinstaller`.
 
 ```python
 pip install pyinstaller
 ```
 
-**Step 2:** Run `pyinstaller --onefile YourScriptName.py`. This would create `.exe` file in `dist/` folder. Share `.exe` file your friend or anyone else who doesn't have python installed.
+**Step two":** Run `pyinstaller --onefile YourScriptName.py`. This would create `.exe` file in `dist/` folder. Share `.exe` file your friend or anyone else who doesn't have python installed.
