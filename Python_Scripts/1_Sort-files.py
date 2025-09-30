@@ -55,7 +55,7 @@ try:
     vid_ext_list = [".mp4", ".mkv", ".mov", ".wmv"]
     aud_ext_list = [".mp3", ".wav", ".aac"]
     doc_ext_list = [".pdf", ".csv", ".docx", ".pptx", ".txt", ".md", ".torrent", ".xlsx"]
-    soft_ext_list=[".exe"]
+    soft_ext_list=[".exe" ".msi", ".vbox-extpack"]
     arc_ext_list=[".zip"]
     counter=1
 
