@@ -73,11 +73,3 @@ Here’s a **filtered list** of the best Python books for **Data Science, Hackin
 | **Hacking**     | Black Hat Python                        | Justin Seitz         |
 | **Hacking**     | Violent Python                          | TJ O’Connor          |
 
----
-
-### **Need More?**  
-- **For Data Science:** Add *"Python Data Science Handbook"* (Jake VanderPlas).  
-- **For Web Dev:** *"RESTful Web APIs with Python"* (Miguel Grinberg).  
-- **For Hacking:** *"Automating Information Security"* (Justin Seitz).  
-
-Let me know if you want **more details** on any book! 🚀
