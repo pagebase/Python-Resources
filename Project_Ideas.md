@@ -3,6 +3,7 @@
 1. [Face detection system](#Project-1)
 2. [Quiz generator](#Project-2)
 3. [Android app for sorting data based on file extensions](#file-sorting-android-app)
+4. [Telegram bot](#telegram-bot)
 
 ---
 # Project 1
@@ -308,3 +309,21 @@ A clear, structured roadmap to learn **face detection**, even under **noisy or p
 ---
 
 ---
+# Project 4
+
+# Telegram bot
+
+Telegram bot which accept text as input, convert into audio and store in Database and send all stored data to particular platform on specified time and date. This project is good for whose schedule is too busy.
+
+# :books: Through coding
+- [Official Telegram Bot API Doc](https://core.telegram.org/bots/api)
+
+- [Python Telegram Bot Library](https://docs.python-telegram-bot.org/)
+
+- [BotFather commands guide](https://core.telegram.org/bots#botfather-commands)
+
+# :books: Without coding
+
+- [Manybot](https://manybot.io)
+- [ChatFuel](https://chatfuel.com)
+- [Flow XO](https://flowxo.com)
