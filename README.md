@@ -45,6 +45,7 @@
     - [BeautifulSoup](#BeautifulSoup)
     - [BeautifulSoup properties](#BeautifulSoup-properties)
 33. [How to run python script without having python installed](#How-to-run-python-script-without-having-python-installed)
+34. [Async programming](#async-programming)
 ---
 # Best books for python
 
@@ -2509,3 +2510,77 @@ pip install pyinstaller
 pyinstaller --onefile YourScriptName.py
 ```
 This would create `.exe` file in `dist/` folder. Share `.exe` file to your friend or anyone else who doesn't have python installed.
+
+---
+# Async programming
+
+Normally, programs run **one thing at a time**:
+
+```python
+print("Step 1")
+print("Step 2")
+print("Step 3")
+```
+
+🪜 Output:
+
+```
+Step 1
+Step 2
+Step 3
+```
+
+Each line waits for the previous one to finish — this is **synchronous** execution.
+
+But sometimes, we need to **wait for slow tasks** (e.g., downloading data, responding to a message).  
+If we wait synchronously, the whole program **freezes** while waiting.
+
+👉 **Asynchronous code lets your program keep working while waiting** for slow tasks to finish.
+
+---
+
+## ⚡ Example: Async vs Sync
+
+### 🐢 Synchronous version
+
+```python
+import time
+
+def hello():
+    time.sleep(3)   # pretend we're waiting for something
+    print("Hello!")
+
+print("Start")
+hello()
+print("Done")
+```
+
+🕒 This will wait 3 seconds before printing `Done`.
+
+---
+
+### 🚀 Asynchronous version
+
+```python
+import asyncio
+
+async def hello():
+    await asyncio.sleep(3)
+    print("Hello!")
+
+async def main():
+    print("Start")
+    await hello()
+    print("Done")
+
+asyncio.run(main())
+```
+
+Here:
+
+- `async` makes a **function asynchronous** (it can pause and resume).
+- `await` tells Python **“wait here without blocking everything else”**.
+
+This way, other tasks can run **in parallel** during the wait.
+
+---
