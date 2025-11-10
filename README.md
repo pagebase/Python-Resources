@@ -1084,6 +1084,27 @@ By default, the `open()` function will only allow us to read the file. We need
 | `b`  | **Binary** mode. Used to handle binary files (e.g., images, audio). Add to other modes like `'rb'`, `'wb'`. |
 | `t`  | **Text** mode (default). Used for text files. Combine with other modes like `'rt'`, `'wt'`.                 |
 | `+`  | **Update**. Opens the file for reading and writing (e.g., `'r+'`, `'w+'`).                                  |
+
+>[!NOTE]
+>### `r+` → **Read and Write (No Truncation)**
+>
+>* Opens an **existing** file for both reading and writing.
+>* The file must already **exist**, or else you get an **error**.
+>* The file pointer starts at the **beginning** of the file.
+>* **Does not erase** the existing content.
+>
+>### `w+` → **Write and Read (With Truncation)**
+>
+>* Opens a file for writing and reading.
+>* If the file **exists**, **its content is erased** (truncated).
+>* If the file **does not exist**, it is **created**.
+>* File pointer starts at the **beginning** of the file.
+>
+>### Summary:
+>
+>* Use **`r+`** when you want to read and modify an existing file **without deleting its contents**.
+>* Use **`w+`** when you want to create or overwrite a file and also read from it afterward.
+
 # File methods
 
 |Method|Description|
