@@ -2606,6 +2606,8 @@ Here:
 This way, other tasks can run **in parallel** during the wait.
 
 ---
+# Self aware python programs
+
 These tools allow your Python script to be "self-aware"—to understand its own location, the environment it's running in, and the interpreter that's executing it. This is essential for writing robust, portable code that can adapt to different systems.
 
 ---
