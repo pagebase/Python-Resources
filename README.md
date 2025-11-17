@@ -46,6 +46,7 @@
     - [BeautifulSoup properties](#BeautifulSoup-properties)
 33. [How to run python script without having python installed](#How-to-run-python-script-without-having-python-installed)
 34. [Async programming](#async-programming)
+35. [Self aware python programs](#self-aware-python-programs)
 ---
 # Best books for python
 
@@ -2605,3 +2606,5 @@ Here:
 This way, other tasks can run **in parallel** during the wait.
 
 ---
+
+# Self aware python programs
