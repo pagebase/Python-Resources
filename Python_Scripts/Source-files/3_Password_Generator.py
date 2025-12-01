@@ -39,4 +39,4 @@ for char in password_list:
 
 # Copy password_list into clipboard
 pyperclip.copy(password_string)
-print("Successfully copid password_list into your clipboard")
+print("Successfully copid password into your clipboard")
