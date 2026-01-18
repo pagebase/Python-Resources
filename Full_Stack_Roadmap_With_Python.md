@@ -24,6 +24,8 @@
 - [ ] Python
 
     - [ ] DJango
+  # 📚  Resources
+- [Tech With Rathan- YouTube](https://youtu.be/3gpo9piG12E)
     
 ---
 
